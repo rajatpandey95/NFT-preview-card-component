@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    cursor:context-menu;
+  }
+
+  html,
+  body {
+    background-color: hsl(217, 54%, 11%);
+    height: 100%;
+    width: 100%;
+  }
+
+  h3 {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  h3:hover{
+    color: cyan;
+    cursor: pointer;
+  }
+
+  svg {
+    display: flex;
+    align-items: center;
+  }
+
+  hr {
+    margin-top: 15px;
+    border: none;
+    height: 0.1px;
+    /* Set the hr color */
+    color: hsl(220, 3%, 59%);
+    /* old IE */
+    background-color: hsl(217, 4%, 62%);
+    /* Modern Browsers */
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .card {
+    height: 70%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 3%;
+  }
+
+  #equiImage {
+    height: 57%;
+    width: 100%;
+    border-radius: 3%;
+    display: flex;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+  }
+  #equiImage svg{
+    visibility: hidden;
+  }
+
+  #equiImageChild {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 100%;
+    background-color: rgba(0,255,255,0.4);
+    /* transition: all 2s; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    height: 43%;
+    margin-top: 10px;
+  }
+
+  .info .desc {
+    color: hsl(215, 51%, 70%)
+  }
+
+  .equiInfo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .equiInfo .price {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .equiInfo .time {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .equiInfo p {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .creation {
+    height: 30px;
+    display: flex;
+    margin-top: 20px;
+  }
+  .creation img {
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  .creation p {
+    color: hsl(215, 51%, 70%);
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .creation span{
+    color: white;
+    margin-left: 4px;
+  }
+  .creation span:hover{
+    color: cyan;
+    cursor: pointer;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 13%, 8%);
+  }
+
+
+  /* Responsive Design CSS */
+
+  @media screen and (max-width:1300px) {
+      .card{
+        width: 25%;
+      }
+  }
+
+  @media screen and (max-width:1000px) and (min-width:701px) {
+        .card{
+        width: 35%;
+        }
+  }
+
+  @media screen and (max-width:700px) and (min-width:450px) {
+    .card{
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    .card{
+      height: 76%;
+          width: 85%;
+    }
+  }
+
+  @media screen and (max-width:290px) {
+    .creation p{
+      display: inline;
+    }
+  }
