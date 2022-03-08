@@ -10,10 +10,5 @@ Thanks for checking out this front-end coding challenge.
 
 <<<<<<< HEAD
 
-## The challenge
+## The challenge ##
 The challenge is to build out this preview card component and get it looking as close to the design as possible.
-=======
-## The challenge
-
-THE challenge is to build out this preview card component and get it looking as close to the design as possible.
->>>>>>> fe29b7c0b99bca9bf451b7cea6b7af9bd7697104
